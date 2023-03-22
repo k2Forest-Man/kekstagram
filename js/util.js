@@ -14,10 +14,24 @@ const checkingString = (textString, countString) => {
 
 checkingString ('Проверочная строка ', 50);
 
+const names = [
+  'Дима',
+  'Тимофей',
+  'Алексей',
+  'Мария',
+  'Кристина',
+  'Вика',
+  'Игорь',
+  'Виктор',
+  'Катя',
+  'Денис',
+];
 
 // Случайный элемент массива
 const getRandomElementArray = (array) => {
-  return array[getRandomNumber(0, array.length - 1)];
-}
+  return names[getRandomNumber(0, array.length - 1)];
+};
+
+console.log(getRandomElementArray(names));
 
 //export { getRandomNumber, checkingString, getRandomElementArray };
