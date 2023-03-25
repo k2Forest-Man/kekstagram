@@ -1,0 +1,4 @@
+/* eslint-disable no-console */
+import { photos } from './data.js';
+
+console.log(photos);

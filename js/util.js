@@ -1,6 +1,3 @@
-/* eslint-disable no-console */
-
-
 // Функция, возвращающая случайное целое число из переданного диапазона включительно (min, max)
 const getRandomNumber = (min, max) => {
   return Math.floor(Math.random() * (max - min + 1)) + min;
@@ -12,13 +9,13 @@ getRandomNumber(1, 33);
 const checkingString = (textString, countString) => {
   return textString.length <= countString;
 };
-checkingString ('Проверочная строка ', 50);
+checkingString ('Проверочная строка', 50);
 
 
 // Случайный элемент массива
 const getRandomElementArray = (array) => {
-  return [getRandomNumber(0, array.length - 1)];
-};
-getRandomElementArray();
+  return array[getRandomNumber(0, array.length - 1)];
+}
 
-//export { getRandomNumber, checkingString, getRandomElementArray };
+
+export { getRandomNumber, getRandomElementArray };
